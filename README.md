@@ -15,7 +15,10 @@ Docker for Android SDK 24 with preinstalled build tools and emulator image
   patcher;v4                                  | 1       | SDK Patch Applier v4                       | patcher/v4/
   platform-tools                              | 30.0.4  | Android SDK Platform-Tools                 | platform-tools/
   platforms;android-24                        | 2       | Android SDK Platform 24                    | platforms/android-24/
-  system-images;android-24;google_apis;x86_64 | 27      | Google APIs Intel x86 Atom_64 System Image | system-images/android-24/google_apis/x86_64/
+  platforms;android-22                        | 2       | Android SDK Platform 22                    | platforms/android-22/
+  sources;android-22                          | 1       | Sources for Android 22                     | sources/android-22/
+  system-images;android-22;google_apis;x86_64 | 26      | Google APIs Intel x86 Atom_64 System Image | system-images/android-22/google_apis/x86_64/
+  
 ```
 
 **Usage**
