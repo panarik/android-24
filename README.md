@@ -2,7 +2,7 @@
 
 Docker for Android SDK 24 with preinstalled build tools and emulator image
 
-> Edit from [mindrunner/docker-android-sdk](https://github.com/mindrunner/docker-android-sdk)
+> Forked from [docker-android-sdk/android-24](https://github.com/docker-android-sdk/android-24)
 
 **Installed Packages**
 ```bash
