@@ -33,6 +33,22 @@ RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "cmdline-tools;lat
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "build-tools;30.0.2"
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platform-tools"
 RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platforms;android-24"
-RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "system-images;android-24;google_apis;x86_64"
+//delete default emulator
+//RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "system-images;android-24;google_apis;x86_64"
 
+// Install Android platform 22
+RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "platforms;android-22"
+
+//Install SDK source Android-24
+RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "sources;android-24"
+
+//Install SDK source Android-22
+RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "sources;android-22"
+
+//Install android-image
+RUN /opt/android-sdk-linux/cmdline-tools/tools/bin/sdkmanager "system-images;android-22;google_apis;x86_64"
+
+//Go to home catalog
 CMD /opt/tools/entrypoint.sh built-in
+//End of prepare SDK
+
